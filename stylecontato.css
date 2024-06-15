@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("data:image/jpeg;base64,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");
+}
+
+.header {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+#logo {
+  position: relative;
+  right: 10px;
+  width: 155px;
+  height: auto;
+  animation: float 2s ease-in-out infinite;
+}
+
+.nav {
+  width: 70%;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+li {
+  background: none;
+  list-style: none;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  height: 3px;
+  width: 100%;
+}
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.titulo-input {
+  height: 600px;
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
+.div-titulo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+}
+
+.titulo {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.titulo2 {
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+}
+
+.titulo3 {
+  color: #fff;
+  font-size: 19px;
+  margin-top: 35px;
+}
+
+#imagem {
+  width: 258px;
+  height: 258px;
+  margin-top: 25px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+#name {
+  width: 70%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-left: 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16.5px;
+  border: none;
+  border-color: none;
+}
+
+#email {
+  width: 70%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-left: 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16.5px;
+  margin-top: 15px;
+  border: none;
+  border-color: none;
+}
+
+#texto {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 0 0 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16.5px;
+  margin-top: 15px;
+  border: none;
+  border-color: none;
+}
+
+.button {
+  width: 85px;
+  height: 50px;
+  background-color: #fff;
+  color: black;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 30px;
+  outline: none;
+  border-color: none;
+  border: none;
+  margin-top: 25px;
+}
+
+.button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.logozap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.logozap:hover {
+  transform: scale(1.02);
+}
+
+.logoinsta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.logoinsta:hover {
+  transform: scale(1.02);
+}
+
+.logoyt {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.logoyt:hover {
+  transform: scale(1.02);
+}
+
+.logogithub {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.logogithub:hover {
+  transform: scale(1.02);
+}
+
+.logoprofprog {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.logoprofprog:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  height: 300px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.logo-foot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.namelink {
+  color: #6695fe;
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.namelink:hover {
+  opacity: 100%;
+}
+
+#logo1 {
+  width: 155px;
+  height: auto;
+}
+
+@media (max-width: 1120px) {
+  .logozap {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logoinsta {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logoyt {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logogithub {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logoprofprog {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logos {
+    margin-bottom: 20px;
+  }
+
+  .titulo3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1060px) {
+  #imagem {
+    display: none;
+  }
+
+  .titulo-input {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .input-form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos {
+    width: fit-content;
+  }
+
+  .div-titulo {
+    padding: 0;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #name {
+    width: 200%;
+  }
+
+  #email {
+    width: 200%;
+  }
+
+  #texto {
+    width: 200%;
+  }
+
+  .logozap {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoinsta {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoyt {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logogithub {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoprofprog {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 5.45rem;
+    left: 0;
+    background: black;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgb(18, 18, 18);
+    border-radius: 0;
+  }
+
+  .menu a:hover {
+    background: rgb(27, 27, 27);
+  }
+
+  li:hover {
+    background: rgb(27, 27, 27);
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 5.45rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  li::before {
+    content: none;
+    background-color: none;
+    position: none;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    transition: none;
+  }
+
+  li:hover::before {
+    content: none;
+    background-color: none;
+    position: none;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 50px;
+  }
+
+  .titulo2 {
+    font-size: 17px;
+  }
+
+  .titulo3 {
+    font-size: 14px;
+  }
+
+  #name {
+    width: 160%;
+  }
+
+  #email {
+    width: 160%;
+  }
+
+  #texto {
+    width: 160%;
+  }
+
+  .logozap {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoinsta {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoyt {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logogithub {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoprofprog {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button {
+    width: 75px;
+    height: 40px;
+    padding: 4px 6px;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .titulo {
+    font-size: 45px;
+  }
+
+  .titulo2 {
+    font-size: 16px;
+  }
+
+  .titulo3 {
+    font-size: 13px;
+  }
+
+  #name {
+    width: 130%;
+  }
+
+  #email {
+    width: 130%;
+  }
+
+  #texto {
+    width: 130%;
+  }
+
+  .logozap {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logoinsta {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logoyt {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logogithub {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logoprofprog {
+    width: 35px;
+    height: 35px;
+  }
+
+  .button {
+    width: 65px;
+    height: 40px;
+    padding: 4px 6px;
+    font-size: 11px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .div-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+
+  .titulo2 {
+    font-size: 14px;
+  }
+
+  .titulo3 {
+    font-size: 10px;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #texto {
+    width: 100%;
+  }
+
+  .logozap {
+    width: 27px;
+    height: 27px;
+  }
+
+  .logoinsta {
+    width: 27px;
+    height: 27px;
+  }
+
+  .logoyt {
+    width: 27px;
+    height: 27px;
+  }
+
+  .logogithub {
+    width: 27px;
+    height: 27px;
+  }
+
+  .logoprofprog {
+    width: 27px;
+    height: 27px;
+  }
+
+  .button {
+    width: 65px;
+    height: 40px;
+    padding: 4px 6px;
+    font-size: 11px;
+    margin-top: 25px;
+  }
+}

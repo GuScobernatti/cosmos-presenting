@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family= Raleway :wght@200 & display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+#logo {
+  position: relative;
+  right: 10px;
+  width: 155px;
+  height: auto;
+  animation: float 2s ease-in-out infinite;
+}
+
+.nav {
+  width: 70%;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+li {
+  background: none;
+  list-style: none;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  height: 3px;
+  width: 100%;
+}
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+#logo-baixo {
+  width: 155px;
+  height: auto;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+#banner {
+  background-image: url("https://acropolejardimamerica.files.wordpress.com/2015/03/kqicj_bbhys-market_maxres.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#trailer-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trailer {
+  width: 50%;
+}
+
+#sinopse {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.description {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  width: 70%;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  background-color: lightskyblue;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.card {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: auto;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.foto1 {
+  background-image: url("https://www.iese.edu/insight/wp-content/uploads/sites/3/2022/11/deGrasse_Planets_031221.jpg");
+}
+
+.foto2 {
+  background-image: url("http://s2.glbimg.com/Ld7DvgSPtFlE8IKPhey_H6iK0oo=/e.glbimg.com/og/ed/f/original/2014/11/11/carl_sagan.jpg");
+}
+
+.animatext2 {
+  font-family: "Special Elite", monospace;
+  background-color: transparent;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: blinkCursor2 500ms steps(60) infinite normal,
+    typing2 8s steps(60) 10s normal both;
+  overflow: hidden;
+}
+
+.animatext1 {
+  font-family: "Special Elite", monospace;
+  background-color: transparent;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: blinkCursor1 500ms steps(60) infinite normal,
+    typing1 8s steps(60) 10s normal both;
+  overflow: hidden;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 58%;
+  }
+}
+
+@keyframes blinkCursor2 {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 49%;
+  }
+}
+
+@keyframes blinkCursor1 {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-foot {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.namelink {
+  color: #6695fe;
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.namelink:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 1060px) {
+  .description {
+    width: 150%;
+  }
+
+  #banner {
+    background-position: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 5.45rem;
+    left: 0;
+    background: black;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgb(18, 18, 18);
+    border-radius: 0;
+  }
+
+  .menu a:hover {
+    background: rgb(27, 27, 27);
+  }
+
+  li:hover {
+    background: rgb(27, 27, 27);
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 5.45rem);
+    visibility: visible;
+    /* overflow-y: auto; */
+  }
+
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .animatext2 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    animation: noanimation;
+    background-color: none;
+    white-space: normal;
+    border-right: none;
+    overflow: none;
+  }
+
+  .animatext1 {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    animation: noanimation;
+    background-color: none;
+    white-space: normal;
+    border-right: none;
+    overflow: none;
+  }
+
+  li::before {
+    content: none;
+    background-color: none;
+    position: none;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    transition: none;
+  }
+
+  li:hover::before {
+    content: none;
+    background-color: none;
+    position: none;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer {
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  #sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    width: 95%;
+  }
+  .trailer {
+    padding-left: 20px;
+  }
+}

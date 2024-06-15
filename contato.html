@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylecontato.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img id="logo" src="./Mídias/cosmos1-removebg-preview.png" />
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <ul class="menu" id="menu" role="menu">
+          <a href="./index.html">
+            <li>Home</li>
+          </a>
+
+          <a href="./contato.html">
+            <li>Contato</li>
+          </a>
+
+          <a href="./fotos.html">
+            <li>Fotos</li>
+          </a>
+
+          <a href="./comentarios.html">
+            <li>Comentários</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="titulo-input">
+      <div class="div-titulo">
+        <h2 class="titulo">Fale conosco</h2>
+        <h4 class="titulo2"><b>Como podemos te ajudar?</b></h4>
+        <span class="titulo3"
+          >Preencha o formulário ou acesse nossas redes sociais <br />
+          para que possamos te ajudar.</span
+        >
+        <img id="imagem" src="./Mídias/download-removebg-preview.png" />
+      </div>
+
+      <div class="input-form">
+        <div class="logos">
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><img src="./Mídias/whatsapp.png" class="logozap"
+          /></a>
+          <a href="https://www.instagram.com/guscobernatti_/" target="_blank"
+            ><img src="./Mídias/instagram logo.png" class="logoinsta"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCJm5qpeveW1t3HwJUPlq6bA"
+            target="_blank"
+            ><img src="./Mídias/youtube logo.png" class="logoyt"
+          /></a>
+          <a href="https://github.com/" target="_blank"
+            ><img src="./Mídias/github logo.png" class="logogithub"
+          /></a>
+          <a href="https://devdeponta.com/" target="_blank"
+            ><img
+              src="./Mídias/profissaoprogramador logo.png"
+              class="logoprofprog"
+          /></a>
+        </div>
+        <form class="form" action="./contato.html">
+          <input
+            id="name"
+            type="text"
+            name="nome"
+            placeholder="Nome completo"
+          />
+
+          <input id="email" type="email" name="email" placeholder="Email" />
+
+          <textarea
+            name="texto"
+            placeholder="Mensagem"
+            id="texto"
+            rows="6"
+          ></textarea>
+
+          <button class="button">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="logo-foot">
+        <img
+          style="object-fit: contain"
+          id="logo1"
+          src="./Mídias/cosmos1-removebg-preview.png"
+        />
+      </div>
+      <span>Todos os direitos reservados ©</span>
+      <span
+        >Desenvolvido por:
+        <a href="https://www.instagram.com/guscobernatti_/" target="_blank">
+          <span class="namelink">Gustavo Luiz</span></a
+        ></span
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
